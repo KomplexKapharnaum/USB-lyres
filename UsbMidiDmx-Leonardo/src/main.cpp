@@ -4,9 +4,10 @@
 #include <MIDI.h>
 #include <USB-MIDI.h>
 
-#include <Artnet.h>
-ArtnetSender artnet;
-
+// DMX
+//
+#include <LeoDMX.class.h>
+LeoDMX DMX;
 
 // Ethernet
 //
@@ -16,39 +17,50 @@ const IPAddress subnet(255, 0, 0, 0);
 const String broadcast = "2.255.255.255";
 uint8_t mac[] = {0x17, 0x00, 0x00, 0x00, 0x00, 0x0A};
 
+
 // ArtNet
+#include <Artnet.h>
+ArtnetSender artnet;
+
 uint32_t universe = 17;
-const uint16_t size = 512;
-uint8_t data[size] = {0};
-
-// Vars
-bool run = false;
+uint8_t data[512] = {0};
 
 
-// USBMIDI_CREATE_DEFAULT_INSTANCE();
+// Midi
+//
+USBMIDI_CREATE_DEFAULT_INSTANCE();
 
+// void onCC(byte channel, byte number, byte value) 
+// {
+//   if (number <= 32) {
+//     int dmxAddr = (channel-1) * 32 + (number-1);
+//     data[ dmxAddr ] = value*2;
+//   }
+// }
 
-void onStart() {
-  run = true;
-}
+// void onNoteOn(byte channel, byte note, byte velocity)
+// {
+//   TXLED1;
+//   MIDI.sendNoteOn(note, velocity, channel);
+// }
 
-void onStop() {
-  run = false;
-}
+// void onNoteOff(byte channel, byte note, byte velocity)
+// {
+//   TXLED0;
+//   MIDI.sendNoteOff(note, velocity, channel);
+// } 
 
-void onCC(byte channel, byte number, byte value) 
-{
-  if (number < 32) data[ channel*32 + number ] = value*2;
-}
 
 // -----------------------------------------------------------------------------
 
 void setup()
 {
-  // MIDI.begin(MIDI_CHANNEL_OMNI);
-  // MIDI.setHandleStart(onStart);
+  DMX.null();
+  
+  MIDI.begin(MIDI_CHANNEL_OMNI);
   // MIDI.setHandleControlChange(onCC);
-  // MIDI.setHandleStop(onStop);
+  // MIDI.setHandleNoteOn(onNoteOn);
+  // MIDI.setHandleNoteOff(onNoteOff);
 
   Ethernet.begin(mac, ip, gateway, gateway, subnet);
   artnet.begin();
@@ -57,8 +69,11 @@ void setup()
 
 void loop()
 { 
-  //MIDI.read();
+  MIDI.read();
 
-  artnet.streaming_data(data, size);
-  if (run) artnet.streaming(broadcast, universe);
+  artnet.streaming_data(data, 512);
+  //artnet.streaming(broadcast, universe);
+  
+  // DMX.send( (unsigned char*) data, 512);
+
 }
