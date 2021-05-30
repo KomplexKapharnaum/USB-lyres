@@ -1,0 +1,35 @@
+{
+  "name": "kartnet",
+  "version": "1.0.0",
+  "description": "midi->artnet",
+  "main": "main.js",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KomplexKapharnaum/USB-lyres.git"
+  },
+  "author": "maigre",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/KomplexKapharnaum/USB-lyres/issues"
+  },
+  "homepage": "https://github.com/KomplexKapharnaum/USB-lyres#readme",
+  "dependencies": {
+    "artnet": "^1.4.0",
+    "easymidi": "^2.0.5"
+  },
+  "pkg": {
+    "scripts": [],
+    "assets": [
+      "node_modules/midi/"
+    ],
+    "targets": [
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"  
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.3</Version>
+  <Author>mgr</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+   <Universe Name="Universe 5" ID="4"/>
+   <Universe Name="Universe 6" ID="5"/>
+   <Universe Name="Universe 7" ID="6"/>
+   <Universe Name="Universe 8" ID="7"/>
+   <Universe Name="Universe 9" ID="8"/>
+   <Universe Name="Universe 10" ID="9"/>
+   <Universe Name="Universe 11" ID="10"/>
+   <Universe Name="Universe 12" ID="11"/>
+   <Universe Name="Universe 13" ID="12"/>
+   <Universe Name="Universe 14" ID="13"/>
+   <Universe Name="Universe 15" ID="14"/>
+   <Universe Name="Universe 16" ID="15"/>
+   <Universe Name="Universe 17" ID="16"/>
+   <Universe Name="Universe 18" ID="17" Passthrough="True">
+    <Input Plugin="ArtNet" Line="0"/>
+   </Universe>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>0</ID>
+   <Name>Dimmers #01</Name>
+   <Universe>17</Universe>
+   <Address>0</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>1</ID>
+   <Name>Dimmers #02</Name>
+   <Universe>17</Universe>
+   <Address>32</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>2</ID>
+   <Name>Dimmers #03</Name>
+   <Universe>17</Universe>
+   <Address>64</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>3</ID>
+   <Name>Dimmers #04</Name>
+   <Universe>17</Universe>
+   <Address>96</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>4</ID>
+   <Name>Dimmers #05</Name>
+   <Universe>17</Universe>
+   <Address>128</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>5</ID>
+   <Name>Dimmers #06</Name>
+   <Universe>17</Universe>
+   <Address>160</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>6</ID>
+   <Name>Dimmers #07</Name>
+   <Universe>17</Universe>
+   <Address>192</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>7</ID>
+   <Name>Dimmers #08</Name>
+   <Universe>17</Universe>
+   <Address>224</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>8</ID>
+   <Name>Dimmers #09</Name>
+   <Universe>17</Universe>
+   <Address>256</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>9</ID>
+   <Name>Dimmers #10</Name>
+   <Universe>17</Universe>
+   <Address>288</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>10</ID>
+   <Name>Dimmers #11</Name>
+   <Universe>17</Universe>
+   <Address>320</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>11</ID>
+   <Name>Dimmers #12</Name>
+   <Universe>17</Universe>
+   <Address>352</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>12</ID>
+   <Name>Dimmers #13</Name>
+   <Universe>17</Universe>
+   <Address>384</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>13</ID>
+   <Name>Dimmers #14</Name>
+   <Universe>17</Universe>
+   <Address>416</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>14</ID>
+   <Name>Dimmers #15</Name>
+   <Universe>17</Universe>
+   <Address>448</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>32 Channel</Mode>
+   <ID>15</ID>
+   <Name>Dimmers #16</Name>
+   <Universe>17</Universe>
+   <Address>480</Address>
+   <Channels>32</Channels>
+  </Fixture>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>1</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
