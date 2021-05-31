@@ -2,7 +2,7 @@
 // Note: to make release: cd release; pkg ../
 //
 
-const VERSION = "1.0.0"
+const VERSION = "1.0.1"
 
 // ARTNET
 //
